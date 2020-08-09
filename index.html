@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Task Assign - TruExam</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <ul>
+        <div class="leftnav">
+          <li>
+            <img
+              id="logo"
+              alt="logo"
+              src="https://uploads-ssl.webflow.com/5e2544675cbbd67ed72643de/5e254b8eb2b645c1cc1332ae_Logo-p-500.png"
+            />
+          </li>
+        </div>
+        <div class="rightnav">
+          <li>Profile</li>
+          <li>Sign Out</li>
+        </div>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="heading">
+        Create a task
+      </div>
+      <div class="form">
+        <form action="post" enctype="multipart/form-data" id="form">
+          <input
+            type="text"
+            name="Task ID"
+            id="TaskID"
+            placeholder="TaskID"
+            required
+          />
+          <input
+            type="text"
+            name="Task Name"
+            id="TaskName"
+            placeholder="TaskName"
+            required
+          />
+          <input
+            type="text"
+            name="details"
+            id="detail"
+            placeholder="Task Details"
+            required
+          />
+          <input type="file" id="image" accept="image/*" required />
+          <button type="submit" id="btnInsert">
+            Create Task
+          </button>
+        </form>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
