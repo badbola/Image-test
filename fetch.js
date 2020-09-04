@@ -36,6 +36,7 @@ function searchData() {
 }
 
 function MarksSub() {
+  var ele = searchEle.value;
   var marksEle = document.getElementById("MarksEle").value;
   if (marksEle < 0 || marksEle > 10) {
     alert("Marks should be in the limit of 0 to 10");
